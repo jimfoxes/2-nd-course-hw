@@ -1,4 +1,64 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  background: url(./img/topstars.png), #E1FF8F;
+  background-repeat: no-repeat;
+  background-position: center 79%;
+  background-size: auto;
+}
+.top__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 196px;
+}
+.top__content {
+  padding-top: 24px;
+  padding-bottom: 156px;
+}
+.top__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 48px;
+}
+.top__btn {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  padding: 16px 65px;
+}
+.top__btn:hover {
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */
