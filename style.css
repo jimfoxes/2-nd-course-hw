@@ -61,4 +61,25 @@ a {
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
   background: rgb(255, 255, 255);
+}
+
+.runline {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  white-space: nowrap;
+  overflow: hidden;
+  background: rgb(188, 236, 48);
+}
+.runline__text {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.runline__img {
+  padding: 27px 0;
 }/*# sourceMappingURL=style.css.map */
