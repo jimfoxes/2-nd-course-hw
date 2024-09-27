@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +10,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <header class="center top">
         <h1 class="top__title">Добро пожаловать<br> на мой сайт мини-игр</h1>
         <div class="top__content">
-            <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
-            <a href="#" class="top__btn">Поехали!</a>
+            <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай
+                <b>«Поехали!»</b> и <b>приступай</b>.</p>
+            <a href="#about-title" class="top__btn">Поехали!</a>
         </div>
 
     </header>
     <div class="runline">
-            <p class="runline__text">викторина</p>
-            <img class="runline__img" src="./img/starline.png" alt="">
-            <p class="runline__text">угадай число</p>
-            <img class="runline__img" src="./img/starline.png" alt="">
-            <p class="runline__text">Переверни текст</p>
-            <img class="runline__img" src="./img/starline.png" alt="">
-            <p class="runline__text">Простая арифметика</p>
-            <img class="runline__img" src="./img/starline.png" alt="">
-            <p class="runline__text">Камень, ножницы, бумага</p>
-            <img class="runline__img" src="./img/starline.png" alt="">
-            <p class="runline__text">Генератор случайных цветов</p>
-            <img class="runline__img" src="./img/starline.png" alt="">
+        <p class="runline__text">викторина</p>
+        <img class="runline__img" src="./img/starline.png" alt="">
+        <p class="runline__text">угадай число</p>
+        <img class="runline__img" src="./img/starline.png" alt="">
+        <p class="runline__text">Переверни текст</p>
+        <img class="runline__img" src="./img/starline.png" alt="">
+        <p class="runline__text">Простая арифметика</p>
+        <img class="runline__img" src="./img/starline.png" alt="">
+        <p class="runline__text">Камень, ножницы, бумага</p>
+        <img class="runline__img" src="./img/starline.png" alt="">
+        <p class="runline__text">Генератор случайных цветов</p>
+        <img class="runline__img" src="./img/starline.png" alt="">
     </div>
+    <main>
+        <section class="about-games center">
+            <h2 class="about-games__title" id="about-title">Об играх</h2>
+            <p class="about-games__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них
+                может поиграть каждый.<br>Все игры доступны для пользования.</p>
+            <div class="about-games__game-cards">
+                <div class="about-games__column">
+                    <a href="#" class="game-card">
+                        <img src="./img/gamecover1.png" alt="Обложка для игры Угадай число" class="game-card__cover">
+                        <div class="game-card__content">
+                            <p class="game-card__number">Игра № 1</p>
+                            <h3 class="game-card__title">Угадай число</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="game-card">
+                        <img src="./img/gamecover4.png" alt="Обложка для игры Камень, ножницы, бумага" class="game-card__cover">
+                        <div class="game-card__content">
+                            <p class="game-card__number">Игра № 4</p>
+                            <h3 class="game-card__title">Камень, ножницы, бумага</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="about-games__column">
+                    <a href="#" class="game-card">
+                        <img src="./img/gamecover2.png" alt="Обложка для игры Простая арифметика" class="game-card__cover">
+                        <div class="game-card__content">
+                            <p class="game-card__number">Игра № 2</p>
+                            <h3 class="game-card__title">Простая арифметика</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="game-card">
+                        <img src="./img/gamecover5.png" alt="Обложка для игры Простая викторина" class="game-card__cover">
+                        <div class="game-card__content">
+                            <p class="game-card__number">Игра № 5</p>
+                            <h3 class="game-card__title">Простая викторина</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="about-games__column">
+                    <a href="#" class="game-card">
+                        <img src="./img/gamecover3.png" alt="Обложка для игры Переверни текст" class="game-card__cover">
+                        <div class="game-card__content">
+                            <p class="game-card__number">Игра № 3</p>
+                            <h3 class="game-card__title">Переверни текст</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="game-card">
+                        <img src="./img/gamecover6.png" alt="Обложка для игры Генератор случайных цветов" class="game-card__cover">
+                        <div class="game-card__content">
+                            <p class="game-card__number">Игра № 6</p>
+                            <h3 class="game-card__title">Генератор случайных цветов</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
