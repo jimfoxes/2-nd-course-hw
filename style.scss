@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;  
+}
+
+.top {
+    background: url(./img/topstars.png), #E1FF8F;
+    background-repeat: no-repeat;
+    background-position: center 79%;
+    background-size: auto;
+
+    &__title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 196px;
+    }
+
+    &__content {
+        padding-top: 24px;
+        padding-bottom: 156px;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 48px;
+    }
+
+    &__btn {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        padding: 16px 65px;
+    }
+
+    &__btn:hover {
+        color: rgb(0, 0, 0);
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+    }
+
+}
+
+.runline {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    white-space: nowrap;
+    overflow: hidden;
+    background: rgb(188, 236, 48);
+    
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        padding: 27px 0;
+    }
+}
+
+.about-games {
+    background: url(./img/aboutstars.png) rgb(32, 32, 39);
+    background-position: center 78px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 50px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 94px;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 24px;
+        padding-bottom: 72px;
+    }
+
+    &__game-cards {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.game-card {
+    max-width: 378px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+
+    &__content {
+        max-width: 306px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 32px 32px 36px;
+    }
+
+    &__cover {
+        max-width: 100%;
+    }
+
+    &__number {
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        padding: 8px 16px 10px;
+    }
+
+    &__title {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+
+.game-card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
