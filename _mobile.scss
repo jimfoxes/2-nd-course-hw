@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+
+    @media (hover: none) {
+        .top__btn:hover {
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(32, 32, 39);
+            background: rgb(32, 32, 39);
+        }
+    }
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+   .about-games {
+        display: none;
+   } 
+
+}
