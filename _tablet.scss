@@ -4,32 +4,92 @@
         padding-right: calc(50% - 393px);
     }
 
-    .top__title {
-        max-width: 792px;
+    @media (hover: hover) {
+        .top__btn:hover, .minigame-card__btn:hover {
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(32, 32, 39);
+            background: rgb(32, 32, 39);
+        }
+    }
+
+    .top {
+        &__title {
+            max-width: 792px;
+        }
     }
 
     .about-games {
+
+        &__game-cards_desktop {
+            display: none;
+        }
 
         &__game-cards {
             column-gap: 29px;
             row-gap: 39px;
         }
-
     }
 
-}
+    .minigames {
+        padding-bottom: 49px;
 
-@media (max-width: 900px) {
+        &__minigame-cards {
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 29px;
+            row-gap: 24px;
+        }
+    }
 
-    .about-games {
-        &__game-cards_desktop {
+    .minigame-card {
+
+        max-width: 343px;
+
+        &__btn {
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: left;
+            padding-bottom: 16px;
+        }
+
+        &__text {
             display: none;
+            padding-bottom: 32px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        &__text_mob {
+            display: block;
+        }
+
+        &__content {
+            align-items: normal;
+            padding: 29px 29px 32px;
+        }
+
+        &__content_mob {
+            order: 1;
         }
 
     }
+
+    .footer__text {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 40px;
+    }
+
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .center {
         padding-left: 24px;
         padding-right: 24px;
@@ -46,7 +106,7 @@
     }
 
     .game-card {
-        max-width: 345px;
+        max-width: 336px;
     }
 
 }

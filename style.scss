@@ -45,6 +45,10 @@ a {
         padding-bottom: 48px;
     }
 
+    &__text_mob {
+        display: none;
+    }
+
     &__btn {
         display: inline-block;
         color: rgb(255, 255, 255);
@@ -65,6 +69,10 @@ a {
         box-sizing: border-box;
         border: 1px solid rgb(0, 0, 0);
         background: rgb(255, 255, 255);
+    }
+
+    &__btn_mob {
+        display: none;
     }
 
 }
@@ -206,7 +214,7 @@ a {
 
 .minigame-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
@@ -259,6 +267,10 @@ a {
         letter-spacing: 0px;
         text-align: left;
         padding-bottom: 36px;
+    }
+
+    &__text_mob {
+        display: none;
     }
 
     &__cover {
