@@ -146,9 +146,15 @@ a {
   max-width: 100%;
 }
 .game-card__number {
+  color: rgb(32, 32, 39);
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
   padding: 8px 16px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: left;
 }
 .game-card__title {
   color: rgb(32, 32, 39);
