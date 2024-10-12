@@ -1,0 +1,87 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        background: url(./img/topstarsmob.png), #E1FF8F;
+        background-repeat: no-repeat;
+        background-position: center 140%;
+        background-size: auto;
+
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+            padding-top: 147px;
+        }
+
+        &__content {
+            display: flex;
+            padding-bottom: 131px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__text_mob {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            padding-bottom: 36px;
+        }
+
+        &__btn {
+            display: none;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            padding: 16px 103.5px;
+        }
+
+        &__btn_mob {
+            display: inline-block;
+        }
+
+    }
+
+    .runline {
+        &__text {
+            font-size: 16px;
+        }
+
+        &__img {
+            width: 19.3px;
+            padding: 15.7px 0;
+        }
+    }
+
+   .about-games {
+        display: none;
+   } 
+
+   .minigames {
+
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            padding-top: 48.3px;
+        }
+
+        &__minigame-cards {
+            font-size: 40px;
+            line-height: 49px;
+            margin-top: 48px;
+        }
+   }
+
+}
