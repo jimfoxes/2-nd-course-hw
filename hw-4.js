@@ -1,4 +1,4 @@
-/*//Задание 1
+//Задание 1
 
 for (let i = 0; i < 2; i++) {
     console.log('Привет');
@@ -51,7 +51,7 @@ for (let i = firstFridey; i < allDay; i += 7) {
 
 //Дополнительные задания
 
-//Задание 1 */
+//Задание 1 
 
 let k = 100;
 let iterations = 0;
