@@ -5,7 +5,10 @@ let userNumber = Number(prompt('Угадайте число от 1 до 100'));
 console.log(userNumber);
 
 while (true) {
-    if (randomNumber === userNumber) {
+    if (isNaN(userNumber)) {
+        userNumber = Number(prompt('Вы ввели текст, а мы угадываем число. Введите пожалуста число от 1 до 100'));
+    } 
+    else if (randomNumber === userNumber) {
         alert(`Поздравляем вы угадали!`);
         break;
     }
