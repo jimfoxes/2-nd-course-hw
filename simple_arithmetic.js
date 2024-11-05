@@ -7,47 +7,35 @@ function simpleArithmetic() {
     const operators = ['+', '-', '*', '/'];
 
     let randomIndexOperator = Math.floor(Math.random() * (operators.length));
-    if (typeof operators[randomIndexOperator] === 'string' && /[/]/.test(operators[randomIndexOperator])) {
-        taskResult = Math.round(eval(`${numberA} ${operators[randomIndexOperator]} ${numberB}`)*100) / 100;
-        userResult = prompt(`Привет, реши задачку!\n${numberA} ${operators[randomIndexOperator]} ${numberB}\nЕсли число получается не целым, то округлите до сотых,\nв качестве разделителя используйте точку.`);
-        if (taskResult == userResult) {
-            correctUserResult = confirm(`${userResult} это правильное решение! Желаете ли решить что-нибудь ещё?`);
-            if (correctUserResult == true) {
-                simpleArithmetic();
+    const taskString = `${numberA} ${operators[randomIndexOperator]} ${numberB}`;
+
+    function checkAnswer(taskResult, userResult) {
+        if (taskResult === userResult) {
+            const correctUserResult = confirm(`${userResult} это правильное решение! Желаете ли решить что-нибудь ещё?`);
+            if(correctUserResult) {
+                return correctUserResult && simpleArithmetic();
             } else {
-                console.log(taskResult);;
+                return correctUserResult;
             }
         } else {
-            incorrectUserResult = confirm(`Неверно\nПравильный ответ ${taskResult}\nЖелаете ли попробовать решить что-нибудь ещё?`);
-            if (incorrectUserResult == true) {
-                simpleArithmetic();
+            const incorrectUserResult = confirm(`Неверно\nПравильный ответ ${taskResult}\nЖелаете ли попробовать решить что-нибудь ещё?`);
+            if(incorrectUserResult) {
+                return incorrectUserResult && simpleArithmetic();
             } else {
-                console.log(taskResult);;
+                return incorrectUserResult;
             }
-        } 
-    } else if (typeof operators[randomIndexOperator] === 'string' && /[+\-\*]/.test(operators[randomIndexOperator])) {
-        taskResult = eval(`${numberA} ${operators[randomIndexOperator]} ${numberB}`);
-        userResult = prompt(`Привет, реши задачку!\n ${numberA} ${operators[randomIndexOperator]} ${numberB}`);
-            if (taskResult == userResult) {
-                correctUserResult = confirm(`${userResult} это правильное решение! Желаете ли решить что-нибудь ещё?`);
-                if (correctUserResult == true) {
-                    simpleArithmetic();
-                } else {
-                    console.log(taskResult);;
-                }
-            } else {
-                incorrectUserResult = confirm(`Неверно\nПравильный ответ ${taskResult}\nЖелаете ли попробовать решить что-нибудь ещё?`);
-                if (incorrectUserResult == true) {
-                    simpleArithmetic();
-                } else {
-                    console.log(taskResult);;
-                }
-            } 
-    } else {
-        console.log('error');
+        }
     }
 
-    console.log(`${numberA} ${operators[randomIndexOperator]} ${numberB}`);
+    if(typeof operators[randomIndexOperator] === 'string' && /[/]/.test(operators[randomIndexOperator])) {
+        const taskResult = Math.round(eval(taskString)*100) / 100;
+        const userResult = +prompt(`Привет, реши задачку!\n${taskString}\nЕсли число получается не целым, то округлите до сотых,\nв качестве разделителя используйте точку.`);
+        checkAnswer(taskResult, userResult);
+    } else if(typeof operators[randomIndexOperator] === 'string' && /[+\-\*]/.test(operators[randomIndexOperator])) {
+        const taskResult = eval(taskString);
+        const userResult = +prompt(`Привет, реши задачку!\n ${taskString}`);
+        checkAnswer(taskResult, userResult);
+    } 
     
 }
 
