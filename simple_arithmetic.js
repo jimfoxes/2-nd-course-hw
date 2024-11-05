@@ -10,21 +10,13 @@ function simpleArithmetic() {
     const taskString = `${numberA} ${operators[randomIndexOperator]} ${numberB}`;
 
     function checkAnswer(taskResult, userResult) {
+        let userInput;
         if (taskResult === userResult) {
-            const correctUserResult = confirm(`${userResult} это правильное решение! Желаете ли решить что-нибудь ещё?`);
-            if(correctUserResult) {
-                return correctUserResult && simpleArithmetic();
-            } else {
-                return correctUserResult;
-            }
+            userInput = confirm(`${userResult} это правильное решение! Желаете ли решить что-нибудь ещё?`);
         } else {
-            const incorrectUserResult = confirm(`Неверно\nПравильный ответ ${taskResult}\nЖелаете ли попробовать решить что-нибудь ещё?`);
-            if(incorrectUserResult) {
-                return incorrectUserResult && simpleArithmetic();
-            } else {
-                return incorrectUserResult;
-            }
+            userInput = confirm(`Неверно\nПравильный ответ ${taskResult}\nЖелаете ли попробовать решить что-нибудь ещё?`);
         }
+        return userInput && simpleArithmetic();
     }
 
     if(typeof operators[randomIndexOperator] === 'string' && /[/]/.test(operators[randomIndexOperator])) {
