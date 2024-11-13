@@ -1,29 +1,32 @@
-let randomNumber = Math.floor(Math.random() * 100) + 1;
-console.log(randomNumber);
+function guessNumber() {
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(randomNumber);
 
-let userNumber = Number(prompt('Угадайте число от 1 до 100'));
-console.log(userNumber);
+    let userNumber = Number(prompt('Угадайте число от 1 до 100'));
+    console.log(userNumber);
 
-while (true) {
-    if (isNaN(userNumber)) {
-        userNumber = Number(prompt('Вы ввели текст, а мы угадываем число. Введите пожалуста число от 1 до 100'));
-    } 
-    else if (randomNumber === userNumber) {
-        alert(`Поздравляем вы угадали!`);
-        break;
-    }
-    else if (randomNumber > userNumber) {
-        numberGreater = confirm('Не угадали! Загаданное число БОЛЬШЕ, чем то которое вы ввели, желаете ли попробовать ещё раз?')
-        if (numberGreater == true) {
-            userNumber = Number(prompt('Попробуйте ещё раз'));
+    while (true) {
+        if (isNaN(userNumber)) {
+            userNumber = Number(prompt('Вы ввели текст, а мы угадываем число. Введите пожалуста число от 1 до 100'));
+        } 
+        else if (randomNumber === userNumber) {
+           return alert(`Поздравляем вы угадали!`);
         }
-        else break;
-    }
-    else if (randomNumber < userNumber) {
-        numberLess = confirm('Не угадали! Загаданное число МЕНЬШЕ, чем то которое вы ввели, желаете ли попробовать ещё раз?')
-        if (numberLess == true) {
-            userNumber = Number(prompt('Попробуйте ещё раз'));
+        else if (randomNumber > userNumber) {
+            numberGreater = confirm('Не угадали! Загаданное число БОЛЬШЕ, чем то которое вы ввели, желаете ли попробовать ещё раз?');
+            if (numberGreater == true) {
+                userNumber = Number(prompt('Попробуйте ещё раз'));
+            }
+            else break;
         }
-        else break;
+        else if (randomNumber < userNumber) {
+            numberLess = confirm('Не угадали! Загаданное число МЕНЬШЕ, чем то которое вы ввели, желаете ли попробовать ещё раз?')
+            if (numberLess == true) {
+                userNumber = Number(prompt('Попробуйте ещё раз'));
+            }
+            else break;
+        }
     }
+
 }
+
