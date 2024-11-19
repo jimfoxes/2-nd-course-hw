@@ -40,14 +40,14 @@ console.log(filter(people2, isMale));
 
  //Задание 3
 
-/* const intervalID = setInterval(() => {
+const intervalID = setInterval(() => {
     console.log(new Date());
  }, 3000);
 
  setTimeout(() => {
     clearInterval(intervalID);
     console.log('30 секунд прошло');
- }, 30000);*/
+ }, 30000);
 
   //Задание 4
   function delayForSecond(callback) {
