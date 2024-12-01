@@ -59,6 +59,7 @@ a {
   background: rgb(32, 32, 39);
   padding: 16px 65px;
   margin-bottom: 30px;
+  transition: 0.5s;
 }
 .top__btn:hover {
   color: rgb(0, 0, 0);
@@ -134,6 +135,7 @@ a {
   background: #FFFFFF;
   border-radius: 30px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+  transition: 0.7s;
 }
 .game-card__content {
   max-width: 306px;
@@ -169,7 +171,6 @@ a {
 .game-card:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: 0.7s;
 }
 
 .minigames {
@@ -215,9 +216,11 @@ a {
   border-radius: 60px;
   background: rgb(32, 32, 39);
   padding: 16px 76px;
+  transition: 0.5s;
 }
 .minigame-card__btn:hover {
   color: rgb(0, 0, 0);
+  cursor: pointer;
   border: 1px solid rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
