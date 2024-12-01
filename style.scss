@@ -63,6 +63,7 @@ a {
         background: rgb(32, 32, 39);
         padding: 16px 65px;
         margin-bottom: 30px;
+        transition: 0.5s;
     }
 
     &__btn:hover {
@@ -79,13 +80,21 @@ a {
 }
 
 .runline {
-    display: flex;
-    align-items: center;
-    gap: 51px;
-    white-space: nowrap;
-    overflow: hidden;
     background: rgb(188, 236, 48);
-    
+    overflow: hidden;
+
+
+    &__line {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 51px;
+        white-space: nowrap;
+        animation: moveLeft 25s linear infinite;
+        animation-direction: reverse;
+        width: 6100px;
+    }
+
 
     &__text {
         color: rgb(32, 32, 39);
@@ -101,6 +110,17 @@ a {
         padding: 27px 0;
     }
 }
+
+@keyframes moveLeft {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+      }
+  }
+
+
 
 .about-games {
     background: url(./img/aboutstars.png) rgb(32, 32, 39);
@@ -150,6 +170,7 @@ a {
     background: #FFFFFF;
     border-radius: 30px;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    transition: 0.7s;
 
     &__content {
         max-width: 306px;
@@ -189,7 +210,6 @@ a {
 .game-card:hover {
     cursor: pointer;
     transform: scale(1.1);
-    transition: 0.7s;
 }
 
 .minigames {
@@ -240,10 +260,12 @@ a {
         border-radius: 60px;
         background: rgb(32, 32, 39);
         padding: 16px 76px;
+        transition: 0.5s;
     }
 
     &__btn:hover {
         color: rgb(0, 0, 0);
+        cursor: pointer;
         border: 1px solid rgb(0, 0, 0);
         background: rgb(255, 255, 255);
     }

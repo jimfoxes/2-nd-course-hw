@@ -130,3 +130,13 @@ function stoneScissorsPaper() {
     }
     
 }
+
+function changeBackgroundColor() {
+    const aboutGamesEl = document.querySelector('.about-games');
+    const miniGamesEl = document.querySelector('.minigames');
+    const color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    aboutGamesEl.style.transition = '0.7s';
+    miniGamesEl.style.transition = '0.7s';
+    aboutGamesEl.style.backgroundColor = color;
+    miniGamesEl.style.backgroundColor = color;
+};
