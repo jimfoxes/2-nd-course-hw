@@ -27,18 +27,32 @@
 
     </header>
     <div class="runline">
-        <p class="runline__text">викторина</p>
-        <img class="runline__img" src="./img/starline.png" alt="">
-        <p class="runline__text">угадай число</p>
-        <img class="runline__img" src="./img/starline.png" alt="">
-        <p class="runline__text">Переверни текст</p>
-        <img class="runline__img" src="./img/starline.png" alt="">
-        <p class="runline__text">Простая арифметика</p>
-        <img class="runline__img" src="./img/starline.png" alt="">
-        <p class="runline__text">Камень, ножницы, бумага</p>
-        <img class="runline__img" src="./img/starline.png" alt="">
-        <p class="runline__text">Генератор случайных цветов</p>
-        <img class="runline__img" src="./img/starline.png" alt="">
+        <div class="runline__line">
+            <p class="runline__text">викторина</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">угадай число</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Переверни текст</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Простая арифметика</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Камень, ножницы, бумага</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Генератор случайных цветов</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">викторина</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">угадай число</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Переверни текст</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Простая арифметика</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Камень, ножницы, бумага</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+            <p class="runline__text">Генератор случайных цветов</p>
+            <img class="runline__img" src="./img/starline.png" alt="">
+        </div>
     </div>
     <main>
         <section class="about-games center">
@@ -220,6 +234,14 @@
             </div>
         </section>
     </main>
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });</script>
     <script src="games.js"></script>
 </body>
 <footer class="footer">

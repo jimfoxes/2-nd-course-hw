@@ -35,7 +35,7 @@
             font-weight: 400;
             line-height: 20px;
             text-align: center;
-            padding-bottom: 36px;
+            padding: 0 10px 36px 10px;
         }
 
         &__btn {
@@ -55,6 +55,14 @@
     }
 
     .runline {
+        
+        &__line {
+            gap: 27.4px;
+            animation: moveLeft 30s linear infinite;
+            animation-direction: reverse;
+            width: 3260px;
+        }
+
         &__text {
             font-size: 16px;
         }

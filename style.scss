@@ -80,13 +80,21 @@ a {
 }
 
 .runline {
-    display: flex;
-    align-items: center;
-    gap: 51px;
-    white-space: nowrap;
-    overflow: hidden;
     background: rgb(188, 236, 48);
-    
+    overflow: hidden;
+
+
+    &__line {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 51px;
+        white-space: nowrap;
+        animation: moveLeft 25s linear infinite;
+        animation-direction: reverse;
+        width: 6100px;
+    }
+
 
     &__text {
         color: rgb(32, 32, 39);
@@ -102,6 +110,17 @@ a {
         padding: 27px 0;
     }
 }
+
+@keyframes moveLeft {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+      }
+  }
+
+
 
 .about-games {
     background: url(./img/aboutstars.png) rgb(32, 32, 39);
